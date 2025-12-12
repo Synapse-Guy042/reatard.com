@@ -4,6 +4,20 @@
     <title>retard fart.com</title>
 </head>
 <body>
-   <img src="retard.gif">
+    <img src="retard.gif" alt="Funny gif" style="width:300px; height:auto;">
+
+    <audio id="myAudio">
+        <source src="sound.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button onclick="playAudio()">Press me</button>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
 </body>
 </html>
